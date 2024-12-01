@@ -1,0 +1,41 @@
+name: Update README Progress
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    # Run at midnight EST (05:00 UTC)
+    - cron: '0 5 * * *'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+
+      - name: Run tests and capture output
+        id: test-run
+        continue-on-error: true
+        run: |
+          cargo test 2>&1 | tee test_output.txt
+
+      - name: Update README
+        run: |
+          python3 .github/scripts/update_readme.py
+        env:
+          TEST_OUTPUT: test_output.txt
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README progress [skip ci]" && git push)
