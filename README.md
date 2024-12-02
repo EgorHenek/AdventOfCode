@@ -6,7 +6,7 @@ This repository contains my solutions for [Advent of Code](https://adventofcode.
 | Day   | Part 1 | Part 2 |
 |-------|--------|--------|
 |  1    |   ⭐️   |   ⭐️   |
-|  2    |   ⏳   |   ⏳   |
+|  2    |   🚫   |   🚫   |
 |  3    |   ⏳   |   ⏳   |
 |  4    |   ⏳   |   ⏳   |
 |  5    |   ⏳   |   ⏳   |
