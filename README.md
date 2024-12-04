@@ -8,7 +8,7 @@ This repository contains my solutions for [Advent of Code](https://adventofcode.
 |  1    |   ⭐️   |   ⭐️   |
 |  2    |   ⭐️   |   ⭐️   |
 |  3    |   ⭐️   |   ⭐️   |
-|  4    |   🚫   |   🚫   |
+|  4    |   ⭐️   |   ⭐️   |
 |  5    |   ⏳   |   ⏳   |
 |  6    |   ⏳   |   ⏳   |
 |  7    |   ⏳   |   ⏳   |
