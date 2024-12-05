@@ -6,6 +6,8 @@ mod day3;
 mod day3_gold;
 mod day4;
 mod day4_gold;
+mod day5;
+mod day5_gold;
 
 fn main() {
     println!("Day1: {}", day1::result());
@@ -16,4 +18,6 @@ fn main() {
     println!("Day3 (🥇): {}", day3_gold::result("data/day3_input.txt"));
     println!("Day4: {}", day4::result("data/day4_input.txt"));
     println!("Day4 (🥇): {}", day4_gold::result("data/day4_input.txt"));
+    println!("Day5: {}", day5::result("data/day5_input.txt"));
+    println!("Day5 (🥇): {}", day5_gold::result("data/day5_input.txt"));
 }
