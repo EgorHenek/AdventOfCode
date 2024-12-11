@@ -15,7 +15,7 @@ This repository contains my solutions for [Advent of Code](https://adventofcode.
 |  8    |   🚫   |   🚫   |
 |  9    |   ⭐️   |   ❌   |
 | 10    |   🚫   |   🚫   |
-| 11    |   ⏳   |   ⏳   |
+| 11    |   🚫   |   🚫   |
 | 12    |   ⏳   |   ⏳   |
 | 13    |   ⏳   |   ⏳   |
 | 14    |   ⏳   |   ⏳   |
