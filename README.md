@@ -19,7 +19,7 @@ This repository contains my solutions for [Advent of Code](https://adventofcode.
 | 12    |   🚫   |   🚫   |
 | 13    |   🚫   |   🚫   |
 | 14    |   🚫   |   🚫   |
-| 15    |   ⏳   |   ⏳   |
+| 15    |   🚫   |   🚫   |
 | 16    |   ⏳   |   ⏳   |
 | 17    |   ⏳   |   ⏳   |
 | 18    |   ⏳   |   ⏳   |
