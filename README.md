@@ -26,7 +26,7 @@ This repository contains my solutions for [Advent of Code](https://adventofcode.
 | 19    |   🚫   |   🚫   |
 | 20    |   🚫   |   🚫   |
 | 21    |   🚫   |   🚫   |
-| 22    |   ⏳   |   ⏳   |
+| 22    |   🚫   |   🚫   |
 | 23    |   ⏳   |   ⏳   |
 | 24    |   ⏳   |   ⏳   |
 | 25    |   ⏳   |   ⏳   |
