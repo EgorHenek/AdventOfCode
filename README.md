@@ -29,7 +29,7 @@ This repository contains my solutions for [Advent of Code](https://adventofcode.
 | 22    |   🚫   |   🚫   |
 | 23    |   🚫   |   🚫   |
 | 24    |   🚫   |   🚫   |
-| 25    |   ⏳   |   ⏳   |
+| 25    |   🚫   |   🚫   |
 
 - ⭐️ Completed
 - 🌟 Only Part 1 completed
