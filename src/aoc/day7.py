@@ -1,5 +1,6 @@
 # https://adventofcode.com/2025/day/7
 from pathlib import Path
+from functools import cache
 
 
 def part1(path: Path) -> int:
@@ -17,12 +18,32 @@ def part1(path: Path) -> int:
     return result
 
 
-def part2(path: Path) -> int: ...
+def part2(path: Path) -> int:
+    with path.open() as file:
+        rows = file.readlines()
+        rows_len = len(rows)
+        start_col = rows[0].find("S")
+
+        @cache
+        def dfs(row: int, col: int) -> int:
+            if row >= rows_len - 1:
+                return 1
+
+            result = 0
+            if rows[row][col] == "^":
+                result = dfs(row + 2, col - 1) + dfs(row + 2, col + 1)
+            else:
+                result = dfs(row + 2, col)
+            return result
+
+        return dfs(0, start_col)
 
 
 if __name__ == "__main__":
     path = Path("./inputs/day7.txt")
 
     result_part1 = part1(path)
+    result_part2 = part2(path)
 
     print(f"{result_part1=}")
+    print(f"{result_part2=}")
